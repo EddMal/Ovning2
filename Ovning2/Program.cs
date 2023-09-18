@@ -99,6 +99,7 @@ namespace Ovning2
         {
             Console.WriteLine("Skriv in en mening med minst tre ord separerade med ett mellanslag:");
             string theThirdWord = ValidateSentence();
+            Console.Clear();
             Console.WriteLine($"Det tredje ordet är: {theThirdWord}");
             Console.WriteLine($"\n{MenuData.ReturnInstruction}");
             Console.ReadLine();
@@ -130,7 +131,7 @@ namespace Ovning2
                 if (words.Length < numberOfWords)
                 {
                     Console.Clear();
-                    Console.WriteLine($"Antalet ord ({words.Length}) {MenuData.errorMessageFindTheThirdWord}");
+                    Console.WriteLine($"Antalet ord({words.Length}) {MenuData.errorMessageFindTheThirdWord}");
                 }
                 else
                 {
@@ -303,6 +304,7 @@ namespace Ovning2
                     {
                         Console.WriteLine($"\"{item}\" {prompt}");
                         stringIsValid = false;
+                    break;
                     }
                 }
 
